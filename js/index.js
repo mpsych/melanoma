@@ -163,3 +163,33 @@ function dataURLToBlob(dataURL) {
 
   return new Blob([uInt8Array], { type: contentType });
 }
+
+async function predictTestImage(img) {
+  const resultContainer = img.nextElementSibling;
+  resultContainer.classList.remove('hidden');
+
+  const model = await tf.loadLayersModel(
+    "https://raw.githubusercontent.com/mpsych/melanoma/main/weights/model.json"
+  );
+  
+  // Preprocess the image and predict
+  let tensor = tf.browser
+    .fromPixels(img)
+    .resizeNearestNeighbor([150, 150]) // Resize the image
+    .expandDims();
+
+  // Make the prediction
+  let prediction = await model.predict(tensor).dataSync();
+
+  // Find the index of the highest score
+  const maxIndex = prediction.indexOf(Math.max(...prediction));
+
+  // Define the class labels
+  const classLabels = ['Melanoma', 'Non-Melanoma'];
+
+  // Display the highest score and corresponding class label
+  resultContainer.innerHTML = `
+    <p>Prediction Result:</p>
+    <p>${classLabels[maxIndex]}: ${prediction[maxIndex].toFixed(2)}</p>
+  `;
+}
