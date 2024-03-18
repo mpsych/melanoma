@@ -6,6 +6,8 @@ This website is a user-friendly interface for detecting melanoma using a deep le
 
 ## Features
 
+![websiteFlow](https://github.com/mpsych/melanoma/assets/78832141/dacfb0ee-2bf7-4d41-85b7-0c0862e8e795)
+
 - Upload an image by dragging and dropping it into the designated area.
 - Capture an image using the device's camera directly from the website.
 - Receive real-time predictions on the uploaded or captured image.
