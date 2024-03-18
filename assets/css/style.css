@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+:root {
+  --family-font: 'Bricolage Grotesque', sans-serif;
+  --border-radius: 12px;
+}
+
+html, body {
+  font-family: var(--family-font);
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.feature {
+  width: 45%;
+}
+
+#dropzone {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #aaa;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+#dropzone img,
+#take-picture img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#dropzone:hover img,
+#take-picture:hover img {
+  transform: scale(1.1);
+}
+
+.image-container {
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: var(--border-radius);
+}
+
+.result-container {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.result-container.hidden {
+  display: none;
+}
+
+button {
+  background-color: #7b3f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  font-family: var(--family-font);
+}
+
+.video-container {
+  margin: 20px 0;
+}
+
+.video-container video {
+  display: block;
+  max-width: 100%;
+}
+
+.video-container button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+  border-radius: var(--border-radius);
+  font-family: var(--family-font);
+  margin-top: 12px;
+  padding: 15px 40px;
+}
+
+header {
+  background-color: #7b3f00;
+  padding: 40px 0;
+  color: #fff;
+}
+
+header .container {
+  max-width: 800px;
+  text-align: center;
+}
+
+header h3 {
+  font-size: 18px;
+  margin-bottom: -1%;
+}
+
+header .logo {
+  width: 100%;
+  margin-bottom: -10%;
+  margin-top: -10%;
+  transition: 0.5s;
+}
+
+header .logo:hover {
+  transform: scale(1.05);
+}
+
+.mobile-capture-input {
+  display: none;
+}
+
+.mobile-button {
+  display: none;
+}
+
+.desktop-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .features {
+    gap: 10px;
+  }
+
+  .large-button {
+    width: 100%;
+    content: "Upload Image";
+    font-size: 18px;
+  }
+
+  .mobile-button {
+    display: block;
+    padding: 20px 40px;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+
+  .desktop-button {
+    display: none;
+  }
+}

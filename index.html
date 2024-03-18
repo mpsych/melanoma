@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Melanoma Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  
+  <body>
+    <header>
+      <div class="container">
+        <img src="assets/images/logo.svg" alt="Melanoma Detection Logo" class="logo">
+        <h3>Powered by: MelaNet</h1>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <div id="dropzone">
+            <img src="assets/images/dragIcon.png" alt="Drag Icon">
+            <p>Drop an image here</p>
+          </div>
+          <div id="drop-image-container" class="image-container"></div>
+          <div id="drop-result-container" class="result-container hidden"></div>
+        </div>
+        <div class="feature">
+          <button id="take-picture" class="desktop-button">
+            Take Picture
+          </button>
+          <button id="mobile-take-picture" class="mobile-button">
+            Take Picture
+          </button>
+          <input id="mobile-capture" class="mobile-capture-input" type="file" accept="image/*" capture="environment">
+          <div id="capture-image-container" class="image-container"></div>
+          <div id="capture-result-container" class="result-container hidden"></div>
+        </div>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.8/dist/tf.min.js"></script>
+    <script src="assets/js/index_mesh.js"></script>
+  </body>
+</html>
