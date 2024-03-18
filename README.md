@@ -1,3 +1,5 @@
+![readmeBanner](https://github.com/mpsych/melanoma/assets/78832141/475654f3-33c7-43fc-9939-93b8b4ccdd21)
+
 # Melanoma Detection Website
 
 This website is a user-friendly interface for detecting melanoma using a deep learning model MelaNet.
@@ -11,6 +13,9 @@ This website is a user-friendly interface for detecting melanoma using a deep le
 - Educational resources and information about melanoma detection.
 
 ## Model
+
+![SoftMax (3)](https://github.com/mpsych/melanoma/assets/78832141/cd68afd9-959d-432c-8769-bcb49636474a)
+
 
 The melanoma detection model used in this website is called MelaNet. For more details about the model, please refer to the original paper: [Link to the paper]
 
