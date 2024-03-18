@@ -5,6 +5,16 @@
   --border-radius: 12px;
 }
 
+::selection {
+	background-color: #7b3f00;
+	color: #f5f5f5;
+}
+
+::-moz-selection {
+	background-color: #7b3f00;
+	color: #f5f5f5;
+}
+
 html, body {
   font-family: var(--family-font);
   background-color: #f5f5f5;
