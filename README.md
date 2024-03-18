@@ -1,2 +1,19 @@
-# melanoma
-Melanoma Predictor website using MelaNet
+# Melanoma Detection Website
+
+This website is a user-friendly interface for detecting melanoma using a deep learning model MelaNet.
+
+## Features
+
+- Upload an image by dragging and dropping it into the designated area.
+- Capture an image using the device's camera directly from the website.
+- Receive real-time predictions on the uploaded or captured image.
+- User-friendly interface with smooth transitions and responsive design.
+- Educational resources and information about melanoma detection.
+
+## Model
+
+The melanoma detection model used in this website is called MelaNet. For more details about the model, please refer to the original paper: [Link to the paper]
+
+## Dataset and Results
+
+The model was trained and evaluated on a comprehensive dataset of melanoma images. For more information about the dataset, results, and other related resources, please visit the official repository: [Link to the official repository]
