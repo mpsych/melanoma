@@ -165,7 +165,7 @@ function dataURLToBlob(dataURL) {
 }
 
 async function predictTestImage(img) {
-  const resultContainer = img.nextElementSibling;
+  const resultContainer = img.nextElementSibling.nextElementSibling;
   resultContainer.classList.remove('hidden');
 
   const model = await tf.loadLayersModel(
