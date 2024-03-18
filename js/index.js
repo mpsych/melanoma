@@ -1,7 +1,7 @@
 async function loadImageAndPredict(file, imageContainerId, resultContainerId) {
   // Load the TensorFlow.js model
   const model = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/shkimmie-umb/melanoma_detection/master/meshnet_out/meshnet/model.json"
+    "https://raw.githubusercontent.com/mpsych/melanoma/main/weights/model.json"
   );
 
   // Create an img element and set its source to the provided file
