@@ -22,4 +22,4 @@ The melanoma detection model used in this website is called MelaNet. For more de
 
 ## Dataset and Results
 
-The model was trained and evaluated on a comprehensive dataset of melanoma images. For more information about the dataset, results, and other related resources, please visit the official repository: [Link to the official repository]
+The model was trained and evaluated on a comprehensive dataset of melanoma images. For more information about the dataset, results, and other related resources, please visit the official repository: [GitHub repository](https://github.com/mpsych/melanoma_detection)
