@@ -1,4 +1,4 @@
-![readmeBanner](https://github.com/mpsych/melanoma/assets/78832141/475654f3-33c7-43fc-9939-93b8b4ccdd21)
+![readmeBanner](https://raw.githubusercontent.com/mpsych/melanoma/main/images/readmeBanner.png)
 
 # Melanoma Detection Website
 
